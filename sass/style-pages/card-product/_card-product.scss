@@ -1,0 +1,404 @@
+// Карточка товара
+.card__section {
+  padding-top: 28px;
+  padding-bottom: 100px;
+}
+.card__grid {
+  display: block;
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 590px auto;
+    gap: 58px;
+  }
+}
+.card__subname {
+  margin-top: 25px;
+  margin-bottom: 19px;
+
+  color: getColor("darkText");
+  font-family: "Gilroy";
+  font-size: 38px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.15;
+  text-align: left;
+}
+.card__article {
+  margin-bottom: 38px;
+  color: #9b9b9a;
+  font-family: Gilroy;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 2.9;
+  text-align: left;
+}
+.card__info {
+  margin-bottom: 42px;
+  display: flex;
+  align-items: baseline;
+}
+.card__price {
+  color: #a9a9a8;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.43;
+  text-align: center;
+  text-decoration: line-through;
+  &--final {
+    margin-right: 20px;
+    color: #1f1f1f;
+    font-family: Gilroy;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+}
+.card__discripion {
+  color: getColor("darkText");
+  font-family: Gilroy;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  &--gray {
+    color: #9b9b9a;
+  }
+  &--green {
+    color: getColor("accent");
+  }
+}
+
+.card__discripion {
+  margin-bottom: 47px;
+}
+.card__discripion p {
+  margin-bottom: 20px;
+}
+.card__discripion p:last-child {
+  margin-bottom: 0px;
+}
+.card__order {
+  display: flex;
+}
+.card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 254px;
+  height: 48px;
+  border-radius: 3px;
+
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 27px;
+
+  &--buy {
+    background-color: getColor("accent");
+    color: getColor("ligthText");
+    margin-right: 10px;
+    transition: 250ms background-color linear;
+
+    &:hover,
+    &:focus {
+      background-color: #19ad62;
+    }
+  }
+  &--order {
+    background-color: getColor("backgroundBtn");
+    color: getColor("accent");
+    transition: 250ms background-color linear;
+
+    // &:hover,
+    // &:focus {
+    //   background-color: getColor("accent");
+    //   color: getColor("ligthText");
+    // }
+  }
+}
+.card__picture {
+  position: relative;
+  margin-bottom: 20px;
+}
+.card__image {
+  border-radius: 10px;
+}
+.card__label--bg {
+  position: absolute;
+  top: -12px;
+  left: -8px;
+  width: 78px;
+}
+.card__label--text {
+  position: absolute;
+  top: 20px;
+  left: 8px;
+  z-index: 20;
+
+  color: getColor("ligthText");
+  font-family: "Gilroy";
+  font-size: 21px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-align: center;
+}
+// Слайдер 1
+.card-slider .slick-list {
+  overflow: hidden;
+}
+.card-slider .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+.card-slider__item img {
+  width: 85px;
+  height: 65px;
+  border-radius: 10px;
+}
+.card-slider {
+  position: relative;
+  padding: 0 30px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+.card-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -5.5px 0 0 0;
+  z-index: 10;
+  font-size: 0;
+  width: 11px;
+  height: 19px;
+}
+.card-slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../images/catalog_images/previous.png") 0 0 / 100% no-repeat;
+}
+.card-slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("../images/catalog_images/next.png") 0 0 / 100% no-repeat;
+}
+.card-slider__item a img {
+  &:hover {
+    border: 2px solid getColor("accent");
+  }
+}
+// Рекомендации
+.recomendation__container {
+  padding-bottom: 117px;
+}
+.recomendation__title {
+  margin-bottom: 20px;
+  color: getColor("darkText");
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 33px;
+  letter-spacing: normal;
+  line-height: 1.23;
+  text-align: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    transform: translateY(-127%);
+    margin-right: 24px;
+
+    width: 36px;
+    height: 7px;
+    background-color: getColor("secondaryAccent");
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 72px;
+    font-size: 43px;
+
+    &::before {
+      width: 46px;
+      height: 9px;
+    }
+  }
+}
+.recomendation-slider .slick-list {
+  overflow: hidden;
+}
+.recomendation-slider .slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+.recomendation-slider {
+  position: relative;
+  padding: 0 0;
+}
+.recomendation-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -17px 0 0 0;
+  z-index: 10;
+  font-size: 0;
+
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #cdcece;
+}
+.recomendation-slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../images/catalog_images/previous.png") 0 0 / 100% no-repeat;
+  background-size: 7px 13px;
+  background-position: 40% 50%;
+  background-color: #fff;
+}
+.recomendation-slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("../images/catalog_images/next.png") 0 0 / 100% no-repeat;
+  background-size: 7px 13px;
+  background-position: 50% 50%;
+  background-color: #fff;
+}
+// Карточка рекомендованого товара
+.recomendation-slider__item {
+  margin: 10px;
+}
+.recomendation-product {
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #cdcece;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.recomendation-product__name {
+  padding: 17px 25px 25px 20px;
+
+  color: getColor("darkText");
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.5;
+}
+.recomendation-product__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 25px 25px 20px;
+}
+.recomendation-product__price {
+  color: getColor("darkText");
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: normal;
+  line-height: 1.41;
+}
+.recomendation-product__wrap a {
+  color: getColor("accent");
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: normal;
+  line-height: 1.5;
+
+  background-color: #e8faf1;
+  cursor: pointer;
+  padding: 10px 9px 8px 12px;
+  border: 0px;
+  border-radius: 3px;
+
+  transition: background-color 250ms linear, color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: getColor("accent");
+    color: #fff;
+  }
+}
+// Декор
+
+.card-decoration {
+  position: absolute;
+  top: 760px;
+  left: 920px;
+  transform: rotate(-90deg);
+
+  z-index: 100;
+  opacity: 0.08;
+  color: getColor("secondaryAccent");
+  font-family: "Gilroy";
+  font-weight: 900;
+  font-size: 88px;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+  &--brand {
+    top: 260px;
+    left: -320px;
+  }
+}
+
+.card-circle {
+  position: absolute;
+  z-index: 100;
+  &--gb {
+    border-radius: 50%;
+    width: 82px;
+    height: 82px;
+    border: 16px solid getColor("accent");
+    box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+
+    top: 594px;
+    left: -230px;
+  }
+  &--ob {
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    border: 15px solid getColor("secondaryAccent");
+    box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+
+    top: 1719px;
+    left: -200px;
+  }
+  &--gs {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    border: 16px solid getColor("accent");
+    box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.47);
+
+    top: 1295px;
+    left: 1350px;
+  }
+  &--os {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 15px solid getColor("secondaryAccent");
+    box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.27);
+
+    top: 0px;
+    left: 1120px;
+  }
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}

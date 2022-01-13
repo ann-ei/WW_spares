@@ -1,0 +1,136 @@
+.sale__wrap-box {
+  position: relative;
+}
+.sale__title {
+  font-family: Gilroy;
+  font-size: 36px;
+  line-height: 53px;
+  font-weight: 800;
+  color: getColor("darkText");
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    font-size: 43px;
+  }
+  &::before {
+    position: absolute;
+    transform: translate(-130%, 300%);
+    content: "";
+    width: 26px;
+    height: 7px;
+    background-color: getColor("secondaryAccent");
+    @media screen and (min-width: 768px) {
+      width: 46px;
+      height: 9px;
+      transform: translate(-150%, 250%);
+    }
+    @media screen and (min-width: 1200px) {
+      transform: translate(-160%, 245%);
+    }
+  }
+}
+
+.sale__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sale__block {
+  width: 100%;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 2);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 5);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.sale__text {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: getColor("darkText");
+  text-align: center;
+}
+.sale__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 9px solid getColor("accent");
+  height: 136px;
+  width: 136px;
+  margin: 38px auto;
+  position: relative;
+  box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
+}
+.sale__icon {
+  width: 52px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::before {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: getColor("secondaryAccent");
+    position: absolute;
+    z-index: -1;
+    transform: translate(25px, -10px);
+    content: "";
+  }
+}
+.sale__button {
+  background-color: getColor("accent");
+  margin: 50px auto;
+  padding: 15px 57px;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 800;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  display: block;
+  &:hover,
+  &:focus {
+    background-color: #19ad62;
+  }
+}
+.sale__button-link {
+  color: getColor("ligthText");
+}
+
+//Circle
+.sale__orange-big {
+  width: 88px;
+  height: 88px;
+  position: absolute;
+  border-radius: 50%;
+  border: 15px solid getColor("secondaryAccent");
+  box-shadow: 0 0 31px 1px rgba(236, 137, 7, 0.685);
+  left: -20%;
+  bottom: 0%;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.sale__green-small {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  border-radius: 50%;
+  border: 15px solid #14bf69;
+  box-shadow: 0 0 31px 1px rgba(20, 191, 105, 0.32);
+  right: -5%;
+  bottom: 90%;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
