@@ -89,7 +89,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+ monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -5092,6 +5093,14 @@ ul li.slick-active button {
   cursor: pointer;
   -webkit-transition: 250ms background-color linear;
   transition: 250ms background-color linear;
+}
+
+.shop-cart__cost-btn a {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 800;
+  color: #ffffff;
 }
 
 .shop-cart__cost-btn:hover {
