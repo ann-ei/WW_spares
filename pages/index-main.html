@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WV Запчасти</title>
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="../fonts/stylesheet.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+  </head>
+  <body>
+    <header class="first-header">
+      <div class="container first-header-container">
+        <!-- _____________лого__________ -->
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+        </div>
+
+        <div class="first-header__top">
+          <!-- _____________кнопка поиска__________ -->
+          <form class="first-header__search">
+            <input
+              type="search"
+              placeholder="Поиск"
+              class="first-header__search-field"
+            />
+            <button type="submit" class="first-header__search-btn"></button>
+          </form>
+          <!-- _____________почта__________ -->
+          <div class="first-header__mail">
+            <div class="first-header__mail-img">
+              <img src="./images/header_mail.png" alt="" />
+            </div>
+            <div class="first-header__mail-content">
+              <a href="mailto:autoservice@cv.ru" class="mail-box__link">
+                autoservice@cv.ru
+              </a>
+
+              <span class="first-header__mail-text"> сотрудничество </span>
+            </div>
+          </div>
+          <!-- _____________телефон__________ -->
+          <div class="first-header__phone">
+            <div class="first-header__phone-img">
+              <img src="./images/header_phone.png" alt="" />
+            </div>
+            <div class="first-header__phone-content">
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+            </div>
+          </div>
+          <!-- _____________корзна__________ -->
+          <div class="first-header__cart">
+            <div class="first-header__cart-img">
+              <a href="#"
+                ><img src="../images/header_shopping_cart.png" alt=""
+              /></a>
+              <span class="first-header__cart-count">1</span>
+            </div>
+            <div class="first-header__cart-content">
+              <span class="first-header__card-text">Корзина</span>
+              <span class="first-header__card-price">на 3 258 руб.</span>
+            </div>
+          </div>
+          <!-- _____________кнопка мобильного меню__________ -->
+          <button
+            type="button"
+            class="menu-btn menu-button--open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="menu-icon"
+              width="22"
+              height="20"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use href="./images/mobile-menu.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="first-header__bottom">
+        <!-- _____________навигация__________ -->
+        <nav class="first-header__nav">
+          <ul id="menu-verhnee-menju" class="">
+            <li
+              id="menu-item-83"
+              class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-83 current-menu-item"
+            >
+              <a href="./index.html">Главная</a>
+            </li>
+            <li
+              id="menu-item-30014"
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30014"
+            >
+              <a href="./pages/catalog.html">Каталог</a>
+            </li>
+            <li
+              id="menu-item-30015"
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30015"
+            >
+              <a href="./pages/service.html">Сервисное обслуживание</a>
+            </li>
+            <li
+              id="menu-item-30017"
+              class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30017"
+            >
+              <a href="./pages/news-list.html">Новости</a>
+            </li>
+            <li
+              id="menu-item-87"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"
+            >
+              <a href="#">О компании</a>
+            </li>
+            <li
+              id="menu-item-88"
+              class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"
+            >
+              <a href="./pages/contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Мобильное меню -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-close js-close-menu">
+          <svg class="menu-close__icon" width="40" height="40">
+            <use href="./images/mobile-close.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu">
+          <ul class="mobile-menu__navigation">
+            <li>
+              <a href="./index.html">Главная</a>
+            </li>
+            <li>
+              <a href="./pages/catalog.html">Каталог</a>
+            </li>
+            <li>
+              <a href="./pages/service.html">Сервисное обслуживание</a>
+            </li>
+            <li>
+              <a href="./pages/news-list.html">Новости</a>
+            </li>
+            <li>
+              <a href="#">О компании</a>
+            </li>
+            <li>
+              <a href="./pages/contacts.html">Контакты</a>
+            </li>
+          </ul>
+
+          <!-- _____________почта__________ -->
+          <div class="first-header__mail--mobile">
+            <div class="first-header__mail-img">
+              <img src="./images/header_mail.png" alt="" />
+            </div>
+            <div class="first-header__mail-content">
+              <a href="mailto:autoservice@cv.ru" class="mail-box__link">
+                autoservice@cv.ru
+              </a>
+
+              <span class="first-header__mail-text"> сотрудничество </span>
+            </div>
+          </div>
+          <!-- _____________телефон__________ -->
+          <div class="first-header__phone--mobile">
+            <div class="first-header__phone-img">
+              <img src="./images/header_phone.png" alt="" />
+            </div>
+            <div class="first-header__phone-content">
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+              <a href="tel:+74958602332" class="first-header__phone-link"
+                >+7 (495) <b> 860-23-32</b></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--HERO-->
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero__title">
+            Ремонт и сервисное обслуживание
+            <span>дорожно-сторительной техники</span>
+          </h1>
+          <p class="hero__text">
+            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+            сгенерировать несколько абзацев более менее осмысленного текста рыбы
+            на русском языке
+          </p>
+          <button class="hero__btn">Сервисное обслуживание</button>
+        </div>
+      </section>
+      <!--Сервисное обслуживание-->
+      <section class="service">
+        <div class="container service-container">
+          <div class="service-box">
+            <h3 class="service-box__title">Сервисное обслуживание</h3>
+
+            <ul class="service-box__list">
+              <li class="service-box__item">
+                <a href="#" class="service-box__link">Vogele</a>
+              </li>
+              <li class="service-box__item">
+                <a href="#" class="service-box__link">Volvo</a>
+              </li>
+              <li class="service-box__item">
+                <a href="#" class="service-box__link">Wirgten</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tabs">
+            <ul class="tabs__caption">
+              <li class="active">Асфальтоукладчик</li>
+              <li>Фреза</li>
+              <li>Каток</li>
+            </ul>
+
+            <div class="tabs__content active">
+              <ul class="tabs__content-list">
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Центральный пульт управления</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Выносной пульт управления</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Микроконтроллеры (мозги)</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Датчики Ультразвуковые</a
+                  >
+                </li>
+              </ul>
+              <ul class="tabs__content-list">
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Центральный пульт управления</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Выносной пульт управления</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Микроконтроллеры (мозги)</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Датчики Ультразвуковые</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="tabs__content">
+              <ul class="tabs__content-list">
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Центральный пульт управления</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Выносной пульт управления</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Микроконтроллеры (мозги)</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Датчики Ультразвуковые</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="tabs__content-list">
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Центральный пульт управления</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Выносной пульт управления</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Микроконтроллеры (мозги)</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Датчики Ультразвуковые</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="tabs__content">
+              <ul class="tabs__content-list">
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Центральный пульт управления</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Выносной пульт управления</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Микроконтроллеры (мозги)</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Датчики Ультразвуковые</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="tabs__content-list">
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Центральный пульт управления</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Выносной пульт управления</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Микроконтроллеры (мозги)</a
+                  >
+                </li>
+                <li class="tabs__content-item">
+                  <a href="" class="tabs__content-link"
+                    >Датчики Ультразвуковые</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="circle-orange">
+            <img src="./images/index_service_orange.png" alt="" />
+          </div>
+          <div class="circle-green">
+            <img src="./images/index_service_green.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!--Стоимость работ-->
+      <section class="cost">
+        <div class="container cost-container">
+          <h2 class="cost__title">Узнайте стоимость работ</h2>
+          <p class="cost__text">
+            Оставьте заявку на сервисное обслуживание, мы свяжемся с Вами и
+            оперативно рассчитаем стоимость работ
+          </p>
+          <form
+            action="#"
+            class="form-call-back"
+            name="form-call-back"
+            autocomplete="on"
+          >
+            <label class="form-field cost__form-field">
+              <span class="form-field__input-wrapper">
+                <input
+                  type="tel"
+                  name="contact-tel"
+                  placeholder="Ваш телефон"
+                  class="form-field__contact-input cost__input"
+                  required=""
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="8096-111-11-11"
+                />
+                <span class="cost__input-icon"></span>
+              </span>
+              <button type="submit" class="btn form-call-back__btn cost__btn">
+                <span class="form-call-back__btn--color">Заказать звонок</span>
+              </button>
+            </label>
+
+            <label class="cost__checkbox-label">
+              <input
+                type="checkbox"
+                name="terms-contract"
+                class="cost__checkbox"
+                value="accept"
+                required
+              />
+              <span class="cost__chekbox-icon"></span>
+              <span class="cost__checkbox-text">
+                Вы соглашаетесь на
+                <a href="#" class="cost__contract-link"
+                  >условия обработки персональных данных</a
+                >
+              </span>
+            </label>
+          </form>
+          <div class="cost__circle">
+            <img src="./images/index_service_orange.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Продажа запасных частей-->
+      <section class="sale">
+        <div class="container sale__wrap-box">
+          <h2 class="sale__title">Продажа запасных частей</h2>
+          <ul class="sale__list">
+            <li class="sale__block">
+              <div class="sale__wrap">
+                <picture class="sale__icon">
+                  <img src="./images/hand.png" alt="Sale of spare parts" />
+                </picture>
+              </div>
+              <p class="sale__text">
+                Большой <br />
+                ассортимент<br />
+                запчастей на складе
+              </p>
+            </li>
+            <li class="sale__block">
+              <div class="sale__wrap">
+                <picture class="sale__icon">
+                  <img src="./images/hand.png" alt="Sale of spare parts" />
+                </picture>
+              </div>
+              <p class="sale__text">
+                Оперативный <br />
+                поиск <br />
+                и доставка
+              </p>
+            </li>
+            <li class="sale__block">
+              <div class="sale__wrap">
+                <picture class="sale__icon">
+                  <img src="./images/hand.png" alt="Sale of spare parts" />
+                </picture>
+              </div>
+              <p class="sale__text">
+                Только проверенные европейские производители
+              </p>
+            </li>
+            <li class="sale__block">
+              <div class="sale__wrap">
+                <picture class="sale__icon">
+                  <img src="./images/hand.png" alt="Sale of spare parts" />
+                </picture>
+              </div>
+              <p class="sale__text">
+                Всегда в наличии контрактные комплектующие
+              </p>
+            </li>
+            <li class="sale__block">
+              <div class="sale__wrap">
+                <picture class="sale__icon">
+                  <img src="./images/hand.png" alt="Sale of spare parts" />
+                </picture>
+              </div>
+              <p class="sale__text">
+                Консультация <br />сервисного инженера<br />
+                бесплатно
+              </p>
+            </li>
+          </ul>
+          <button type="button" class="sale__button">
+            <a href="#" class="sale__button-link">Оставить заявку</a>
+          </button>
+          <div class="sale__orange-big"></div>
+          <div class="sale__green-small"></div>
+        </div>
+      </section>
+
+      <!-- Популярные категории -->
+      <section class="popular-categories">
+        <div class="container popular-categories__box">
+          <h2 class="popular-categories__title">Популярные категории</h2>
+          <ul class="popular-categories__list">
+            <li class="popular-categories__item">
+              <div class="popular-categories__block">
+                <h3 class="popular-categories__block-title">
+                  Vogele super 1/2/3 series
+                </h3>
+                <div class="one">
+                  <img
+                    class="popular-categories__label"
+                    src="./images/catalog_images/avtobrand_1.png"
+                    alt="Vogele brand"
+                  />
+                  <ul class="popular-categories__block-list">
+                    <li class="popular-categories__block-item">
+                      <a href="#" class="popular-categories__block-link"
+                        >Запчасти для Асфальтоукладчика</a
+                      >
+                    </li>
+                    <li class="popular-categories__block-item">
+                      <a href="#" class="popular-categories__block-link"
+                        >Центральный пульт управления</a
+                      >
+                    </li>
+                    <li class="popular-categories__block-item">
+                      <a href="#" class="popular-categories__block-link"
+                        >Выносной пульт управления</a
+                      >
+                    </li>
+                    <li class="popular-categories__block-item">
+                      <a href="#" class="popular-categories__block-link"
+                        >Микроконтроллеры (мозг)</a
+                      >
+                    </li>
+                    <li class="popular-categories__block-item">
+                      <a href="#" class="popular-categories__block-link"
+                        >Датчики Ультразвуковые</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="popular-categories__item">
+              <div class="popular-categories__block">
+                <h3 class="popular-categories__block-title">Volvo</h3>
+                <img
+                  class="popular-categories__label"
+                  src="./images/catalog_images/avtobrand_2.png"
+                  alt="Volvo brand"
+                />
+                <ul class="popular-categories__block-list">
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Центральный пульт управления</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Боковой пульт управления</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Датчики</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Запчасти для дорожной фрезы</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="popular-categories__item">
+              <div class="popular-categories__block">
+                <h3 class="popular-categories__block-title">WIRTGEN</h3>
+                <img
+                  class="popular-categories__label"
+                  src="./images/catalog_images/avtobrand_3.png"
+                  alt="Wirtgen brand"
+                />
+                <ul class="popular-categories__block-list">
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Пульты управления</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Монитор</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Микроконтроллеры</a
+                    >
+                  </li>
+                  <li class="popular-categories__block-item">
+                    <a href="#" class="popular-categories__block-link"
+                      >Запчасти для другой спецтехники</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <button type="button" class="popular-categories__button">
+            <a
+              href="../pages/catalog.html"
+              class="popular-categories__button-link"
+              >Перейти в каталог</a
+            >
+          </button>
+          <div class="popular-categories__green-big"></div>
+          <p class="popular-categories__background">ПОПУЛЯРНОЕ</p>
+        </div>
+      </section>
+
+      <!--Запчасти в наличии и под заказ-->
+      <section class="stock">
+        <div class="container stock__box">
+          <p class="stock__background">ЗАПЧАСТИ</p>
+          <h2 class="stock__title">Запчасти в наличии и под заказ</h2>
+          <div class="stock__list slider-stock">
+            <div class="stock__item slider__item">
+              <article class="stock__product">
+                <img
+                  class="stock__image"
+                  src="./images/cable-system.png"
+                  alt="Фото товара"
+                  width="271px"
+                />
+                <h3 class="stock__name">Кабель системы нивелирования moba</h3>
+                <div class="stock__wrap">
+                  <p class="stock__price">16 990 руб.</p>
+                  <button
+                    type="button"
+                    class="stock__button"
+                    aria-label="More details"
+                    onclick="window.location.href =`../pages/card-product.html`;"
+                  >
+                    Подробнее
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="stock__item slider__item">
+              <article class="stock__product">
+                <img
+                  class="stock__image"
+                  src="./images/cable-system.png"
+                  alt="Фото товара"
+                  width="271px"
+                />
+                <h3 class="stock__name">Кабель системы нивелирования moba</h3>
+                <div class="stock__wrap">
+                  <p class="stock__price">16 990 руб.</p>
+                  <button
+                    type="button"
+                    class="stock__button"
+                    aria-label="More details"
+                    onclick="window.location.href =`../pages/card-product.html`;"
+                  >
+                    Подробнее
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="stock__item slider__item">
+              <article class="stock__product">
+                <img
+                  class="stock__image"
+                  src="./images/cable-system.png"
+                  alt="Фото товара"
+                  width="271px"
+                />
+                <h3 class="stock__name">Кабель системы нивелирования moba</h3>
+                <div class="stock__wrap">
+                  <p class="stock__price">16 990 руб.</p>
+                  <button
+                    type="button"
+                    class="stock__button"
+                    aria-label="More details"
+                    onclick="window.location.href =`../pages/card-product.html`;"
+                  >
+                    Подробнее
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="stock__item slider__item">
+              <article class="stock__product">
+                <img
+                  class="stock__image"
+                  src="./images/cable-system.png"
+                  alt="Фото товара"
+                  width="271px"
+                />
+                <h3 class="stock__name">Кабель системы нивелирования moba</h3>
+                <div class="stock__wrap">
+                  <p class="stock__price">16 990 руб.</p>
+                  <button
+                    type="button"
+                    class="stock__button"
+                    aria-label="More details"
+                    onclick="window.location.href =`../pages/card-product.html`;"
+                  >
+                    Подробнее
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="stock__item slider__item">
+              <article class="stock__product">
+                <img
+                  class="stock__image"
+                  src="./images/cable-system.png"
+                  alt="Фото товара"
+                  width="271px"
+                />
+                <h3 class="stock__name">Кабель системы нивелирования moba</h3>
+                <div class="stock__wrap">
+                  <p class="stock__price">16 990 руб.</p>
+                  <button
+                    type="button"
+                    class="stock__button"
+                    aria-label="More details"
+                    onclick="window.location.href =`../pages/card-product.html`;"
+                  >
+                    Подробнее
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="stock__item slider__item">
+              <article class="stock__product">
+                <img
+                  class="stock__image"
+                  src="./images/cable-system.png"
+                  alt="Фото товара"
+                  width="271px"
+                />
+                <h3 class="stock__name">Кабель системы нивелирования moba</h3>
+                <div class="stock__wrap">
+                  <p class="stock__price">16 990 руб.</p>
+                  <button
+                    type="button"
+                    class="stock__button"
+                    aria-label="More details"
+                    onclick="window.location.href =`../pages/card-product.html`;"
+                  >
+                    Подробнее
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="stock__orange-small"></div>
+        </div>
+      </section>
+
+      <!--Бесплатная консультация инженера -->
+      <section class="free-consultation">
+        <div class="container free-consultation__container">
+          <h2 class="free-consultation__title">
+            Беспланая консультация инженера
+          </h2>
+          <p class="free-consultation__subtitle">
+            Оставьте заявку на сервисное обслуживание, мы свяжемся с Вами и
+            оперативно рассчитаем стоимость работ
+          </p>
+          <form
+            action="#"
+            class="form-call-back"
+            name="form-call-back"
+            autocomplete="on"
+          >
+            <label class="form-field free-consultation__form-field">
+              <span class="form-field__input-wrapper">
+                <input
+                  type="tel"
+                  name="contact-tel"
+                  placeholder="Ваш телефон"
+                  class="form-field__contact-input free-consultation__input"
+                  required=""
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="8096-111-11-11"
+                />
+                <span class="free-consultation__input-icon"></span>
+              </span>
+              <button type="submit" class="btn free-consultation__btn">
+                <span class="form-call-back__btn--color">Заказать звонок</span>
+              </button>
+            </label>
+
+            <label class="free-consultation__checkbox-label">
+              <input
+                type="checkbox"
+                name="terms-contract"
+                class="free-consultation__checkbox"
+                value="accept"
+                required
+              />
+              <span class="free-consultation__chekbox-icon"></span>
+              <span class="free-consultation__checkbox-text">
+                Соглашаюсь с рассылкой и принимаю
+                <a href="#" class="free-consultation__contract-link"
+                  >условия договора</a
+                >
+              </span>
+            </label>
+          </form>
+        </div>
+      </section>
+
+      <!-- наши клиенты -->
+      <section class="our-clients">
+        <div class="container">
+          <h2 class="our-clients__title">Наши клиенты</h2>
+          <div class="our-cliens__container ourClientsSlider">
+            <div class="our-cliens__item">
+              <a href="#">
+                <img
+                  src="./images/mtc.png"
+                  class="our-clients__logo"
+                  lt="Логотип компании MTC"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./images/audit.png"
+                  class="our-clients__logo"
+                  alt="Логотип компании Auditorium"
+                />
+              </a>
+            </div>
+            <div class="our-cliens__item">
+              <a href="#">
+                <img
+                  src="./images/telesat.png"
+                  class="our-clients__logo"
+                  alt="Логотип компании Телесат"
+              /></a>
+              <a href="#">
+                <img
+                  src="./images/teleat.png"
+                  class="our-clients__logo"
+                  alt="Логотип компании Telesat"
+                />
+              </a>
+            </div>
+            <div class="our-cliens__item">
+              <a href="#">
+                <img
+                  src="./images/eaj.png"
+                  class="our-clients__logo"
+                  alt="Логотип компании EAJ"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./images/rockhead.png"
+                  class="our-clients__logo"
+                  alt="Логотип компании Rock&Head"
+                />
+              </a>
+            </div>
+            <div class="our-cliens__item">
+              <a href="#">
+                <img
+                  src="./images/peak.png"
+                  class="our-clients__logo"
+                  alt="Логотип компании PEAK"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./images/globakgrocery.png"
+                  class="our-clients__logo"
+                  alt="Логотип компании The Global Grocery"
+                />
+              </a>
+            </div>
+            <div class="our-cliens__item">
+              <a href="#">
+                <img
+                  src="./images/solvo.png"
+                  class="our-clients__logo"
+                  alt="Логотип компании SOLVO"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./images/obw.png"
+                  class="our-clients__logo"
+                  alt="Логотип компании The DataBase World"
+                />
+              </a>
+            </div>
+            <div class="our-cliens__item">
+              <a href="#">
+                <img
+                  src="./images/medicus.png"
+                  class="our-clients__logo"
+                  alt="Логотип компании Medicus"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./images/trigon.png"
+                  class="our-clients__logo"
+                  alt="Логотип компании Тригон"
+                />
+              </a>
+            </div>
+          </div>
+          <span class="our-cliens__decoration-text">клиенты</span>
+          <div class="our-cliens__decoration-circle--green"></div>
+        </div>
+      </section>
+
+      <!-- Галерея  -->
+      <section class="gallery">
+        <div class="container">
+          <h2 class="gallery__title">Галерея</h2>
+
+          <ul class="gallerySlider gallery__slider">
+            <li class="gallery__item">
+              <a class="gallery__img--link" href="./images/gallery-photo.png"
+                ><img
+                  class="gallery-img"
+                  src="./images/gallery-photo.png"
+                  alt="Фото галлереи"
+              /></a>
+              <div class="gallery__overlay"></div>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__img--link" href="./images/gallery-photo.png"
+                ><img
+                  class="gallery-img"
+                  src="./images/gallery-photo.png"
+                  alt="Фото галлереи"
+              /></a>
+              <div class="gallery__overlay"></div>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__img--link" href="./images/gallery-photo.png"
+                ><img
+                  class="gallery-img"
+                  src="./images/gallery-photo.png"
+                  alt="Фото галлереи"
+              /></a>
+              <div class="gallery__overlay"></div>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__img--link" href="./images/gallery-photo.png"
+                ><img
+                  class="gallery-img"
+                  src="./images/gallery-photo.png"
+                  alt="Фото галлереи"
+              /></a>
+              <div class="gallery__overlay"></div>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__img--link" href="./images/gallery-photo.png"
+                ><img
+                  class="gallery-img"
+                  src="./images/gallery-photo.png"
+                  alt="Фото галлереи"
+              /></a>
+              <div class="gallery__overlay"></div>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__img--link" href="./images/gallery-photo.png"
+                ><img
+                  class="gallery-img"
+                  src="./images/gallery-photo.png"
+                  alt="Фото галлереи"
+              /></a>
+              <div class="gallery__overlay"></div>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__img--link" href="./images/gallery-photo.png"
+                ><img
+                  class="gallery-img"
+                  src="./images/gallery-photo.png"
+                  alt="Фото галлереи"
+              /></a>
+              <div class="gallery__overlay"></div>
+            </li>
+            <li class="gallery__item">
+              <a class="gallery__img--link" href="./images/gallery-photo.png"
+                ><img
+                  class="gallery-img"
+                  src="./images/gallery-photo.png"
+                  alt="Фото галлереи"
+              /></a>
+              <div class="gallery__overlay"></div>
+            </li>
+          </ul>
+          <p class="gallery__text-decoration">галерея</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container container__footer">
+        <div class="footer__box">
+          <div class="footer-nav">
+            <p class="footer-nav__text">Для клиентов</p>
+            <ul>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="">Меню</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="">Меню</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="">Меню</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <p class="footer-nav__text">О нас</p>
+            <ul>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="">Меню</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="">Меню</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="">Меню</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <p class="footer-nav__text">Для компаний</p>
+            <ul>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="">Меню</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="">Меню</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="">Меню</a>
+              </li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <p class="info-block__subtitle">Наши контакты:</p>
+            <p class="info-block__desc">ООО “Название компании полное”</p>
+            <p class="info-block__desc">
+              <a class="" href="">По вопросам размещения рекламы</a>
+            </p>
+            <p class="info-block__subtitle">Режим работы:</p>
+            <p class="info-block__desc">Пн - вс 09:00 - 21:00</p>
+          </div>
+        </div>
+
+        <div class="social">
+          <p class="social__text">Мы в соцсетях:</p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://www.instagram.com/"
+                ><img
+                  class="social__img"
+                  src="./images/footer/instagram.png"
+                  alt=""
+                  width="11"
+                  height="18"
+              /></a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.facebook.com/"
+                ><img
+                  class="social__img"
+                  src="./images/footer/facebook.png"
+                  alt=""
+                  width="18"
+                  height="18"
+              /></a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.linkedin.com/"
+                ><img
+                  class="social__img"
+                  src="./images/footer/linkedin.png"
+                  alt=""
+                  width="18"
+                  height="18"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="coryright">
+          <div>
+            <p>Информация о посещении сайта.</p>
+          </div>
+          <div>
+            <p class="copy-text">&#169;Копирайтинг, 2010-2021</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- скрипт мобильного меню -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./JS/mobile-menu.js"></script>
+
+    <!-- скрипт слайдера -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./JS/slider.js"></script>
+    <!-- скрипт табов -->
+    <script src="./JS/tabs.js"></script>
+    <!-- слайдер Slick -->
+    <script src="./JS/galery-slider.js"></script>
+    <script src="./JS/our-clients-slider.js"></script>
+    <!-- зум фоток в галерее -->
+    <script src="./JS/jquery.magnific-popup.min.js"></script>
+    <script src="./JS/common.js"></script>
+  </body>
+</html>
