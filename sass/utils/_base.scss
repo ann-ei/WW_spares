@@ -41,7 +41,12 @@ ul {
   margin: 0px;
   padding-left: 0px;
 }
-
+section {
+  overflow: hidden;
+}
+textarea {
+  resize: none;
+}
 // Глобальные селекторы
 
 .container {

@@ -2,6 +2,7 @@
 .card__section {
   padding-top: 28px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 .card__grid {
   display: block;
@@ -95,6 +96,7 @@
   width: 254px;
   height: 48px;
   border-radius: 3px;
+  cursor: pointer;
 
   font-family: "Gilroy";
   font-size: 16px;
@@ -111,7 +113,8 @@
 
     &:hover,
     &:focus {
-      background-color: #19ad62;
+      background-color: getColor("backgroundBtn");
+      color: getColor("accent");
     }
   }
   &--order {
@@ -119,11 +122,11 @@
     color: getColor("accent");
     transition: 250ms background-color linear;
 
-    // &:hover,
-    // &:focus {
-    //   background-color: getColor("accent");
-    //   color: getColor("ligthText");
-    // }
+    &:hover,
+    &:focus {
+      background-color: getColor("accent");
+      color: getColor("ligthText");
+    }
   }
 }
 .card__picture {

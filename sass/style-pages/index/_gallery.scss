@@ -73,7 +73,9 @@
 .gallery__item:focus .gallery__overlay {
   transform: translateX(0);
 }
-
+.slick-arrow {
+  cursor: pointer;
+}
 .gallerySlider .slick-arrow {
   display: block;
   position: absolute;

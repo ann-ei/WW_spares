@@ -120,12 +120,13 @@
 }
 .catalog-card__label {
   position: absolute;
-  opacity: 0.7;
+  opacity: 0.4;
   bottom: 20px;
   left: 20px;
+  z-index: -1;
 }
 .catalog-card__meta {
-  position: absolute;
+  // position: absolute;
   top: calc(54px + 28px);
   padding: 10px 20px 10px 20px;
   z-index: 10;
@@ -189,11 +190,19 @@
   letter-spacing: normal;
   line-height: 1.81;
   text-align: center;
+  margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     margin-bottom: 60px;
+  }
+}
+.catalog-filter p {
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 .catalog-filter__list {

@@ -281,6 +281,14 @@ ul {
   padding-left: 0px;
 }
 
+section {
+  overflow: hidden;
+}
+
+textarea {
+  resize: none;
+}
+
 .container {
   position: relative;
   margin: 0px auto;
@@ -748,7 +756,7 @@ ul {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1200px) {
   .second-header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1625,6 +1633,9 @@ ul {
       flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sale__block {
@@ -2349,6 +2360,7 @@ ul li.slick-active button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
   padding-top: 73px;
   padding-bottom: 69px;
   position: relative;
@@ -2767,6 +2779,10 @@ ul li.slick-active button {
 .gallery__item:focus .gallery__overlay {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.slick-arrow {
+  cursor: pointer;
 }
 
 .gallerySlider .slick-arrow {
@@ -4133,13 +4149,13 @@ ul li.slick-active button {
 
 .catalog-card__label {
   position: absolute;
-  opacity: 0.7;
+  opacity: 0.4;
   bottom: 20px;
   left: 20px;
+  z-index: -1;
 }
 
 .catalog-card__meta {
-  position: absolute;
   top: 82px;
   padding: 10px 20px 10px 20px;
   z-index: 10;
@@ -4208,6 +4224,7 @@ ul li.slick-active button {
   letter-spacing: normal;
   line-height: 1.81;
   text-align: center;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .catalog-filter {
@@ -4218,6 +4235,15 @@ ul li.slick-active button {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 60px;
+  }
+}
+
+.catalog-filter p {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .catalog-filter p {
+    margin-bottom: 0;
   }
 }
 
@@ -4972,6 +4998,7 @@ input:focus {
 .card__section {
   padding-top: 28px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 
 .card__grid {
@@ -5088,6 +5115,7 @@ input:focus {
   width: 254px;
   height: 48px;
   border-radius: 3px;
+  cursor: pointer;
   font-family: "Gilroy";
   font-size: 16px;
   font-weight: 800;
@@ -5103,13 +5131,18 @@ input:focus {
   transition: 250ms background-color linear;
 }
 .card__button--buy:hover, .card__button--buy:focus {
-  background-color: #19ad62;
+  background-color: #e8faf1;
+  color: #15bf69;
 }
 .card__button--order {
   background-color: #e8faf1;
   color: #15bf69;
   -webkit-transition: 250ms background-color linear;
   transition: 250ms background-color linear;
+}
+.card__button--order:hover, .card__button--order:focus {
+  background-color: #15bf69;
+  color: #ffffff;
 }
 
 .card__picture {
@@ -6500,7 +6533,6 @@ input:focus {
 }
 
 .contacts__container--decoration {
-  background-image: url(../images/contacts/triangle.png);
   background-repeat: no-repeat;
   background-position: top 0 right 0;
   margin: 0 auto;
@@ -6509,6 +6541,7 @@ input:focus {
 }
 @media screen and (min-width: 768px) {
   .contacts__container--decoration {
+    background-image: url(../images/contacts/triangle.png);
     position: absolute;
     max-width: 320px;
     top: 150px;
@@ -6636,6 +6669,7 @@ input:focus {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
+  border: 1px solid transparent;
   color: #000000;
 }
 @media screen and (max-width: 767px) {
@@ -6647,6 +6681,9 @@ input:focus {
   .contacts-form__input {
     width: 262px;
   }
+}
+.contacts-form__input:focus {
+  border: 1px solid #14bf69;
 }
 
 .contacts-form__textarea {
@@ -6660,6 +6697,7 @@ input:focus {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
+  border: 1px solid transparent;
   color: #000000;
 }
 @media screen and (max-width: 767px) {
@@ -6671,6 +6709,10 @@ input:focus {
   .contacts-form__textarea {
     width: 542px;
   }
+}
+.contacts-form__textarea:focus {
+  border: 1px solid #14bf69;
+  outline: none;
 }
 
 .contacts-form__btn {
@@ -6684,12 +6726,18 @@ input:focus {
   border: none;
   text-align: center;
   display: block;
+  cursor: pointer;
   color: #ffffff;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear;
 }
 @media screen and (max-width: 767px) {
   .contacts-form__btn {
     padding: 15px 67px;
   }
+}
+.contacts-form__btn:hover {
+  background-color: #1baa62;
 }
 
 .contacts-form__checkbox-text {

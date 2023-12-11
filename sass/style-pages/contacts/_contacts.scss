@@ -118,7 +118,6 @@
 // Контейнер с адресом
 
 .contacts__container--decoration {
-  background-image: url(../images/contacts/triangle.png);
   // max-width: 400px;
   background-repeat: no-repeat;
   background-position: top 0 right 0;
@@ -126,6 +125,7 @@
   width: 100%;
   padding-right: 13px;
   @media screen and (min-width: 768px) {
+    background-image: url(../images/contacts/triangle.png);
     position: absolute;
     max-width: 320px;
     top: 150px;
@@ -224,6 +224,7 @@
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
+  border: 1px solid transparent;
   color: getColor("darkText");
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -231,6 +232,10 @@
 
   @media screen and (min-width: 768px) {
     width: 262px;
+  }
+
+  &:focus {
+    border: 1px solid #14bf69;
   }
 }
 .contacts-form__textarea {
@@ -244,12 +249,18 @@
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
+  border: 1px solid transparent;
   color: getColor("darkText");
   @media screen and (max-width: 767px) {
     width: 100%;
   }
   @media screen and (min-width: 768px) {
     width: 542px;
+  }
+
+  &:focus {
+    border: 1px solid #14bf69;
+    outline: none;
   }
 }
 
@@ -264,9 +275,15 @@
   border: none;
   text-align: center;
   display: block;
+  cursor: pointer;
   color: getColor("ligthText");
+  transition: all 150ms linear;
   @media screen and (max-width: 767px) {
     padding: 15px 67px;
+  }
+
+  &:hover {
+    background-color: #1baa62;
   }
 }
 
