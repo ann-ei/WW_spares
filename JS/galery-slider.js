@@ -7,14 +7,14 @@ $(document).ready(function () {
     speed: 500,
     responsive: [
       {
-        breakpoint: 678,
+        breakpoint: 1119,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 320,
+        breakpoint: 767,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,

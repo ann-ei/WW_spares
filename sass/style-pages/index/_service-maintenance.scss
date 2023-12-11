@@ -1,3 +1,6 @@
+.service {
+  overflow: hidden;
+}
 .container.service-container {
   padding: 80px 30px 0 30px;
   position: relative;
@@ -74,7 +77,6 @@
 
   &:hover {
     color: getColor("accent");
-    font-weight: 700;
   }
 }
 // TABS
@@ -95,16 +97,16 @@
   position: relative;
   margin: -1px 0 0 -1px;
 }
-.tabs__caption li:last-child:before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  right: -2px;
-  z-index: -1;
-  height: 5px;
-  background: #7dca86;
-}
+// .tabs__caption li:last-child:before {
+//   content: "";
+//   position: absolute;
+//   bottom: -5px;
+//   left: 0;
+//   right: -2px;
+//   z-index: -1;
+//   height: 5px;
+//   background: #7dca86;
+// }
 .tabs__caption:after {
   content: "";
   display: table;
@@ -121,7 +123,8 @@
   font-family: Gilroy;
   font-size: 17px;
   line-height: 27px;
-  @media screen and(max-width:767px) {
+
+  @media screen and (max-width: 767px) {
     background: transparent;
     width: 100%;
     text-align: left;

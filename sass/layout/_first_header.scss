@@ -56,13 +56,13 @@
   color: #666464;
 }
 .first-header__search-btn {
-  padding: 22px 19px;
+  padding: 22px 19px 21px 19px;
   background-color: getColor("accentSearch");
   background-image: url(../images/search.png);
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
-  left: 284px;
+  left: 285px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background-position: 52%;

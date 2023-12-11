@@ -65,6 +65,7 @@
   text-align: center;
   color: getColor("ligthText");
   transition: 250ms background-color linear;
+  cursor: pointer;
 
   &:hover {
     background-color: #19ad62;
