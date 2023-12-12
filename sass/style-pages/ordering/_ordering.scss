@@ -126,6 +126,7 @@
   line-height: 35px;
   font-weight: 400;
   color: #292929;
+  cursor: pointer;
 }
 
 .custom-radio-btn {
@@ -208,6 +209,7 @@
   background-color: #e8faf1;
   padding: 19px 148px 19px 33px;
   border-radius: 10px;
+  cursor: pointer;
   transition: 250ms background-color linear;
   @media screen and (max-width: 1199px) {
     padding: 19px 120px 19px 33px;
@@ -277,7 +279,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    padding: 8px 52px;
+    padding: 8px 31px;
     font-size: 14px;
   }
 }

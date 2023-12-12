@@ -238,6 +238,10 @@
   cursor: pointer;
   transition: 250ms background-color linear;
 
+  a {
+    color: #ffffff;
+  }
+
   &:hover {
     background-color: #13af61;
   }
